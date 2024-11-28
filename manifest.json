@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "prashanthreddy's AdBlocker",
+  "version": "1.0",
+  "description": "Custom ad-blocking extension designed by prashanthreddy",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "myIcon.png",
+    "48": "myIcon.png",
+    "128": "myIcon.png"
+  }
+}
